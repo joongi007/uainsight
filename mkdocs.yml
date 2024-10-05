@@ -1,0 +1,13 @@
+site_name: useragent-parser
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - API Reference: api.md
+  - Integrations:
+      - Django: integrations/django.md
+      - FastAPI: integrations/fastapi.md
+      - Flask: integrations/flask.md
+  - Contributing Guide: contributing.md
