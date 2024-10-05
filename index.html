@@ -18,7 +18,7 @@
     
     
       
-        <title>useragent-parser</title>
+        <title>uainsight</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-useragent_parser" class="md-skip">
+        <a href="#welcome-to-uainsight" class="md-skip">
           Skip to content
         </a>
       
@@ -76,7 +76,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="useragent-parser" class="md-header__button md-logo" aria-label="useragent-parser" data-md-component="logo">
+    <a href="." title="uainsight" class="md-header__button md-logo" aria-label="uainsight" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -90,7 +90,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            useragent-parser
+            uainsight
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -171,13 +171,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="useragent-parser" class="md-nav__button md-logo" aria-label="useragent-parser" data-md-component="logo">
+    <a href="." title="uainsight" class="md-nav__button md-logo" aria-label="uainsight" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    useragent-parser
+    uainsight
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -233,6 +233,15 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-uainsight-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      What does uainsight mean?
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#key-features" class="md-nav__link">
@@ -499,6 +508,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#what-does-uainsight-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      What does uainsight mean?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#key-features" class="md-nav__link">
     <span class="md-ellipsis">
       Key Features
@@ -558,17 +576,24 @@
                   
 
 
-<h1 id="welcome-to-useragent_parser">Welcome to useragent_parser</h1>
-<p>useragent-parser is a powerful and flexible Python package for parsing and analyzing User-Agent strings. It offers seamless integration with popular web frameworks like FastAPI, Django, and Flask.</p>
+<h1 id="welcome-to-uainsight">Welcome to uainsight</h1>
+<p>uainsight is a powerful and flexible Python package for parsing and analyzing User-Agent strings. The name "uainsight" combines "UA" (User Agent) with "insight," reflecting our goal to provide deep understanding and analysis of User-Agent data. It offers seamless integration with popular web frameworks like FastAPI, Django, and Flask.</p>
+<h2 id="what-does-uainsight-mean">What does uainsight mean?</h2>
+<ul>
+<li><strong>UA</strong>: Stands for User Agent, the core focus of our package.</li>
+<li><strong>insight</strong>: Represents the deep analysis and understanding we provide for User-Agent strings.</li>
+</ul>
+<p>Together, uainsight embodies our mission to offer comprehensive, insightful analysis of User-Agent data, going beyond simple parsing to provide valuable insights for web developers and analysts.</p>
 <h2 id="key-features">Key Features</h2>
 <ul>
 <li>Accurate parsing of User-Agent strings</li>
 <li>Extraction of browser, operating system, and device information</li>
 <li>Bot detection capabilities</li>
 <li>Easy integration with FastAPI, Django, and Flask</li>
+<li>Insightful analysis of User-Agent trends and patterns</li>
 </ul>
 <h2 id="quick-start">Quick Start</h2>
-<pre><code class="language-python">from useragent_parser import parse_user_agent
+<pre><code class="language-python">from uainsight import parse_user_agent
 
 ua_string = &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36&quot;
 ua = parse_user_agent(ua_string)
@@ -579,9 +604,9 @@ print(f&quot;Device: {ua.device}&quot;)
 </code></pre>
 <h2 id="next-steps">Next Steps</h2>
 <ul>
-<li><a href="installation/">Installation Guide</a>: Learn how to install useragent_parser</li>
-<li><a href="usage/">Usage Guide</a>: Explore the basic and advanced usage of useragent_parser</li>
-<li><a href="api/">API Reference</a>: Detailed information about useragent_parser's classes and methods</li>
+<li><a href="installation/">Installation Guide</a>: Learn how to install uainsight</li>
+<li><a href="usage/">Usage Guide</a>: Explore the basic and advanced usage of uainsight</li>
+<li><a href="api/">API Reference</a>: Detailed information about uainsight's classes and methods</li>
 <li>Framework Integrations:<ul>
 <li><a href="integrations/django/">Django Integration</a></li>
 <li><a href="integrations/fastapi/">FastAPI Integration</a></li>
@@ -592,7 +617,7 @@ print(f&quot;Device: {ua.device}&quot;)
 <h2 id="contributing">Contributing</h2>
 <p>We welcome contributions! Please see our <a href="contributing/">Contributing Guide</a> for more details.</p>
 <h2 id="license">License</h2>
-<p>useragent_parser is released under the MIT License. See the <a href="https://github.com/joongi007/useragent-parser/blob/main/LICENSE">LICENSE</a> file for more details.</p>
+<p>uainsight is released under the MIT License. See the <a href="https://github.com/joongi007/uainsight/blob/main/LICENSE">LICENSE</a> file for more details.</p>
 
 
 

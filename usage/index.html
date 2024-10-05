@@ -20,7 +20,7 @@
     
     
       
-        <title>Usage - useragent-parser</title>
+        <title>Usage - uainsight</title>
       
     
     
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="useragent-parser" class="md-header__button md-logo" aria-label="useragent-parser" data-md-component="logo">
+    <a href=".." title="uainsight" class="md-header__button md-logo" aria-label="uainsight" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -92,7 +92,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            useragent-parser
+            uainsight
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -173,13 +173,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="useragent-parser" class="md-nav__button md-logo" aria-label="useragent-parser" data-md-component="logo">
+    <a href=".." title="uainsight" class="md-nav__button md-logo" aria-label="uainsight" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    useragent-parser
+    uainsight
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -657,11 +657,11 @@
 
 
 <h1 id="usage-guide">Usage Guide</h1>
-<p>This guide provides an overview of how to use useragent_parser in your Python projects.</p>
+<p>This guide provides an overview of how to use uainsight in your Python projects.</p>
 <h2 id="basic-usage">Basic Usage</h2>
 <h3 id="parsing-a-user-agent-string">Parsing a User-Agent String</h3>
 <p>The most common use case is parsing a User-Agent string:</p>
-<pre><code class="language-python">from useragent_parser import parse_user_agent
+<pre><code class="language-python">from uainsight import parse_user_agent
 
 ua_string = &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36&quot;
 ua = parse_user_agent(ua_string)
@@ -678,7 +678,7 @@ else:
     print(&quot;This is not a mobile device&quot;)
 </code></pre>
 <h3 id="bot-detection">Bot Detection</h3>
-<p>useragent_parser can help you identify if a User-Agent string belongs to a bot:</p>
+<p>uainsight can help you identify if a User-Agent string belongs to a bot:</p>
 <pre><code class="language-python">if ua.is_bot:
     print(&quot;This User-Agent belongs to a bot&quot;)
 else:
@@ -687,7 +687,7 @@ else:
 <h2 id="advanced-usage">Advanced Usage</h2>
 <h3 id="using-the-useragentparser-class">Using the UserAgentParser Class</h3>
 <p>For more control over the parsing process, you can use the <code>UserAgentParser</code> class directly:</p>
-<pre><code class="language-python">from useragent_parser import UserAgentParser
+<pre><code class="language-python">from uainsight import UserAgentParser
 
 parser = UserAgentParser()
 ua = parser.parse(&quot;Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Mobile/15E148 Safari/604.1&quot;)
@@ -697,7 +697,7 @@ print(f&quot;OS: {ua.os.name} {ua.os.version}&quot;)
 print(f&quot;Is Touch Capable: {ua.is_touch_capable}&quot;)
 </code></pre>
 <h3 id="handling-unknown-user-agents">Handling Unknown User-Agents</h3>
-<p>When encountering an unknown User-Agent, useragent_parser will still provide as much information as it can:</p>
+<p>When encountering an unknown User-Agent, uainsight will still provide as much information as it can:</p>
 <pre><code class="language-python">ua = parse_user_agent(&quot;Unknown/1.0&quot;)
 print(f&quot;Browser: {ua.browser.name or 'Unknown'}&quot;)
 print(f&quot;OS: {ua.os.name or 'Unknown'}&quot;)
@@ -712,7 +712,7 @@ print(f&quot;OS: {ua.os.name or 'Unknown'}&quot;)
 <h2 id="next-steps">Next Steps</h2>
 <ul>
 <li>Check out the <a href="../api/">API Reference</a> for a complete list of attributes and methods.</li>
-<li>Learn how to integrate useragent_parser with popular web frameworks:<ul>
+<li>Learn how to integrate uainsight with popular web frameworks:<ul>
 <li><a href="../integrations/django/">Django Integration</a></li>
 <li><a href="../integrations/fastapi/">FastAPI Integration</a></li>
 <li><a href="../integrations/flask/">Flask Integration</a></li>

@@ -20,7 +20,7 @@
     
     
       
-        <title>Django - useragent-parser</title>
+        <title>Django - uainsight</title>
       
     
     
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="useragent-parser" class="md-header__button md-logo" aria-label="useragent-parser" data-md-component="logo">
+    <a href="../.." title="uainsight" class="md-header__button md-logo" aria-label="uainsight" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -92,7 +92,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            useragent-parser
+            uainsight
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -173,13 +173,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="useragent-parser" class="md-nav__button md-logo" aria-label="useragent-parser" data-md-component="logo">
+    <a href="../.." title="uainsight" class="md-nav__button md-logo" aria-label="uainsight" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    useragent-parser
+    uainsight
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -593,19 +593,19 @@
 
 
 <h1 id="django-integration">Django Integration</h1>
-<p>useragent_parser provides seamless integration with Django through a middleware.</p>
+<p>uainsight provides seamless integration with Django through a middleware.</p>
 <h2 id="installation">Installation</h2>
-<p>First, ensure you have installed useragent_parser in your Django project:</p>
-<pre><code class="language-bash">poetry add useragent-parser
+<p>First, ensure you have installed uainsight in your Django project:</p>
+<pre><code class="language-bash">poetry add uainsight
 </code></pre>
 <p>or if you're using pip:</p>
-<pre><code class="language-bash">pip install useragent-parser
+<pre><code class="language-bash">pip install uainsight
 </code></pre>
 <h2 id="configuration">Configuration</h2>
-<p>Add the useragent_parser middleware to your Django project by editing the <code>MIDDLEWARE</code> setting in your <code>settings.py</code> file:</p>
+<p>Add the uainsight middleware to your Django project by editing the <code>MIDDLEWARE</code> setting in your <code>settings.py</code> file:</p>
 <pre><code class="language-python">MIDDLEWARE = [
     # ... other middleware
-    'useragent_parser.integrations.django.DjangoUserAgentMiddleware',
+    'uainsight.integrations.django.DjangoUserAgentMiddleware',
 ]
 </code></pre>
 <h2 id="usage">Usage</h2>
@@ -617,7 +617,7 @@
 <h2 id="advanced-usage">Advanced Usage</h2>
 <h3 id="custom-middleware-configuration">Custom Middleware Configuration</h3>
 <p>If you need to customize the middleware, you can create your own subclass:</p>
-<pre><code class="language-python">from useragent_parser.integrations.django import DjangoUserAgentMiddleware
+<pre><code class="language-python">from uainsight.integrations.django import DjangoUserAgentMiddleware
 
 class MyCustomMiddleware(DjangoUserAgentMiddleware):
     def __init__(self, get_response=None):
