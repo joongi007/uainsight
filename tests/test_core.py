@@ -1,6 +1,6 @@
 import pytest
 
-from useragent_parser.core import (
+from uainsight.core import (
     UserAgentParser,
     parse_user_agent,
 )

@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Optional
 
-from useragent_parser.utils import (
+from uainsight.utils import (
     BROWSER_REGEXES,
     CONSOLE_REGEXES,
     DEVICE_REGEXES,

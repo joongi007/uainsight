@@ -10,7 +10,7 @@ except ImportError:
 from logging import getLogger
 from typing import Optional
 
-from useragent_parser.core import UserAgent, UserAgentParser
+from uainsight.core import UserAgent, UserAgentParser
 
 logger = getLogger(__name__)
 

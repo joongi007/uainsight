@@ -1,28 +1,28 @@
 # Flask Integration
 
-useragent_parser provides straightforward integration with Flask through a middleware.
+uainsight provides straightforward integration with Flask through a middleware.
 
 ## Installation
 
-First, ensure you have installed useragent_parser in your Flask project:
+First, ensure you have installed uainsight in your Flask project:
 
 ```bash
-poetry add useragent-parser
+poetry add uainsight
 ```
 
 or if you're using pip:
 
 ```bash
-pip install useragent-parser
+pip install uainsight
 ```
 
 ## Configuration
 
-To use useragent_parser with Flask, you need to initialize the middleware with your Flask app:
+To use uainsight with Flask, you need to initialize the middleware with your Flask app:
 
 ```python
 from flask import Flask
-from useragent_parser.integrations.flask import FlaskUserAgentMiddleware
+from uainsight.integrations.flask import FlaskUserAgentMiddleware
 
 app = Flask(__name__)
 FlaskUserAgentMiddleware(app)
@@ -48,7 +48,7 @@ def hello():
 If you need to customize the middleware, you can subclass it:
 
 ```python
-from useragent_parser.integrations.flask import FlaskUserAgentMiddleware
+from uainsight.integrations.flask import FlaskUserAgentMiddleware
 
 class MyCustomMiddleware(FlaskUserAgentMiddleware):
     def __init__(self, app):

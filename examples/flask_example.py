@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request
 
-from useragent_parser.integrations.flask import FlaskUserAgentMiddleware
+from uainsight.integrations.flask import FlaskUserAgentMiddleware
 
 app = Flask(__name__)
 FlaskUserAgentMiddleware(app)

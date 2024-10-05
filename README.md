@@ -1,6 +1,6 @@
-# useragent-parser
+# uainsight
 
-useragent-parser is a Python package for parsing and analyzing User-Agent strings. It provides easy integration with FastAPI, Django, and Flask.
+uainsight is a Python package for parsing and analyzing User-Agent strings. It provides easy integration with FastAPI, Django, and Flask.
 
 ## Features
 
@@ -14,19 +14,19 @@ useragent-parser is a Python package for parsing and analyzing User-Agent string
 Using Poetry (recommended):
 
 ```bash
-poetry add useragent-parser
+poetry add uainsight
 ```
 
 Using pip:
 
 ```bash
-pip install useragent-parser
+pip install uainsight
 ```
 
 ## Quick Start
 
 ```python
-from useragent_parser import parse_user_agent
+from uainsight import parse_user_agent
 
 ua_string = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
 ua = parse_user_agent(ua_string)
@@ -38,7 +38,7 @@ print(f"Device: {ua.device}")
 
 ## Documentation
 
-For full documentation, visit [https://joongi007.github.io/useragent-parser/](https://joongi007.github.io/useragent-parser/)
+For full documentation, visit [https://joongi007.github.io/uainsight/](https://joongi007.github.io/uainsight/)
 
 ## License
 

@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "useragent-parser"
+name = "uainsight"
 version = "0.1.0"
 description = "Inspired by the express-useragent package, A User-Agent parser for Python with integrations for FastAPI, Django, and Flask"
 authors = ["joongi007 <joongi007@naver.com>"]
 readme = "README.md"
 license = "MIT"
-homepage = "https://joongi007.github.io/useragent-parser/"
-repository = "https://github.com/joongi007/useragent-parser"
+homepage = "https://joongi007.github.io/uainsight/"
+repository = "https://github.com/joongi007/uainsight"
 keywords = ["user-agent", "parser", "fastapi", "django", "flask"]
 
 [tool.poetry.dependencies]
@@ -65,7 +65,7 @@ extend-exclude = '''
 )/
 '''
 
-[tool.poetry_bumpversion.file."useragent_parser/__init__.py"]
+[tool.poetry_bumpversion.file."uainsight/__init__.py"]
 search = '__version__ = "{current_version}"'
 replace = '__version__ = "{new_version}"'
 

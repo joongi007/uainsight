@@ -1,29 +1,29 @@
 # Django Integration
 
-useragent_parser provides seamless integration with Django through a middleware.
+uainsight provides seamless integration with Django through a middleware.
 
 ## Installation
 
-First, ensure you have installed useragent_parser in your Django project:
+First, ensure you have installed uainsight in your Django project:
 
 ```bash
-poetry add useragent-parser
+poetry add uainsight
 ```
 
 or if you're using pip:
 
 ```bash
-pip install useragent-parser
+pip install uainsight
 ```
 
 ## Configuration
 
-Add the useragent_parser middleware to your Django project by editing the `MIDDLEWARE` setting in your `settings.py` file:
+Add the uainsight middleware to your Django project by editing the `MIDDLEWARE` setting in your `settings.py` file:
 
 ```python
 MIDDLEWARE = [
     # ... other middleware
-    'useragent_parser.integrations.django.DjangoUserAgentMiddleware',
+    'uainsight.integrations.django.DjangoUserAgentMiddleware',
 ]
 ```
 
@@ -44,7 +44,7 @@ def my_view(request):
 If you need to customize the middleware, you can create your own subclass:
 
 ```python
-from useragent_parser.integrations.django import DjangoUserAgentMiddleware
+from uainsight.integrations.django import DjangoUserAgentMiddleware
 
 class MyCustomMiddleware(DjangoUserAgentMiddleware):
     def __init__(self, get_response=None):

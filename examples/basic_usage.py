@@ -1,4 +1,4 @@
-from useragent_parser import parse_user_agent
+from uainsight import parse_user_agent
 
 # Sample User-Agent strings
 user_agents = [

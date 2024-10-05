@@ -1,47 +1,47 @@
 # Installation Guide
 
-This guide will help you install useragent_parser in your Python environment.
+This guide will help you install uainsight in your Python environment.
 
 ## Requirements
 
-useragent_parser requires Python 3.9 or later.
+uainsight requires Python 3.9 or later.
 
 ## Installation Methods
 
 ### Using Poetry (Recommended)
 
-If you're using Poetry for dependency management (which we recommend), you can add useragent_parser to your project with:
+If you're using Poetry for dependency management (which we recommend), you can add uainsight to your project with:
 
 ```bash
-poetry add useragent-parser
+poetry add uainsight
 ```
 
 ### Using pip
 
-If you prefer using pip, you can install useragent_parser with:
+If you prefer using pip, you can install uainsight with:
 
 ```bash
-pip install useragent-parser
+pip install uainsight
 ```
 
 ## Verifying the Installation
 
-After installation, you can verify that useragent_parser is correctly installed by running Python and trying to import it:
+After installation, you can verify that uainsight is correctly installed by running Python and trying to import it:
 
 ```python
-import useragent_parser
-print(useragent_parser.__version__)
+import uainsight
+print(uainsight.__version__)
 ```
 
-This should print the version number of useragent_parser without any errors.
+This should print the version number of uainsight without any errors.
 
 ## Installing for Development
 
-If you want to contribute to useragent_parser or install the latest development version, you can clone the repository and install it in editable mode:
+If you want to contribute to uainsight or install the latest development version, you can clone the repository and install it in editable mode:
 
 ```bash
-git clone https://github.com/joongi007/useragent-parser.git
-cd useragent-parser
+git clone https://github.com/joongi007/uainsight.git
+cd uainsight
 poetry install
 ```
 
@@ -53,4 +53,4 @@ pip install -e .
 
 ## Next Steps
 
-Now that you have useragent_parser installed, you can start using it in your projects. Check out the [Usage Guide](usage.md) for examples and best practices.
+Now that you have uainsight installed, you can start using it in your projects. Check out the [Usage Guide](usage.md) for examples and best practices.

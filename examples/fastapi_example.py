@@ -1,7 +1,7 @@
 import uvicorn
 from fastapi import FastAPI, Request
 
-from useragent_parser.integrations.fastapi import FastapiUserAgentMiddleware
+from uainsight.integrations.fastapi import FastapiUserAgentMiddleware
 
 app = FastAPI()
 app.add_middleware(FastapiUserAgentMiddleware)

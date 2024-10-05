@@ -1,14 +1,14 @@
-# Contributing to useragent_parser
+# Contributing to uainsight
 
-We welcome contributions to useragent_parser! This document provides guidelines for contributing to the project.
+We welcome contributions to uainsight! This document provides guidelines for contributing to the project.
 
 ## Getting Started
 
 1. Fork the repository on GitHub.
 2. Clone your fork locally:
 
-        git clone https://github.com/joongi007/useragent-parser.git
-        cd useragent-parser    
+        git clone https://github.com/joongi007/uainsight.git
+        cd uainsight    
 
 3. Ensure you have Poetry installed. If not, install it following the instructions at [Poetry Installation](https://python-poetry.org/docs/#installation)
     
@@ -98,7 +98,7 @@ If you have any questions about working on or deploying the documentation, pleas
 ## Submitting Changes
 
 1. Push your changes to your fork on GitHub.
-2. Submit a pull request to the main repository (https://github.com/joongi007/useragent-parser).
+2. Submit a pull request to the main repository (https://github.com/joongi007/uainsight).
 3. The core team will review your pull request and may request changes or ask questions.
 
 ## Reporting Issues
@@ -108,7 +108,7 @@ If you have any questions about working on or deploying the documentation, pleas
 
 ## Feature Requests
 
-We're always looking for suggestions to improve useragent_parser. If you have an idea for a new feature:
+We're always looking for suggestions to improve uainsight. If you have an idea for a new feature:
 
 1. Check if the feature has already been suggested or discussed in the issues.
 2. If not, open a new issue describing the feature and its potential benefits.
@@ -117,4 +117,4 @@ We're always looking for suggestions to improve useragent_parser. If you have an
 
 If you have any questions about contributing, please open an issue and we'll be happy to help!
 
-Thank you for contributing to useragent_parser!
+Thank you for contributing to uainsight!

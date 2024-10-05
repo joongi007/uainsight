@@ -4,9 +4,9 @@ from fastapi import FastAPI, Request
 from fastapi.testclient import TestClient
 from flask import Flask
 
-from useragent_parser.integrations.django import DjangoUserAgentMiddleware
-from useragent_parser.integrations.fastapi import FastapiUserAgentMiddleware
-from useragent_parser.integrations.flask import FlaskUserAgentMiddleware
+from uainsight.integrations.django import DjangoUserAgentMiddleware
+from uainsight.integrations.fastapi import FastapiUserAgentMiddleware
+from uainsight.integrations.flask import FlaskUserAgentMiddleware
 
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
 
@@ -39,7 +39,7 @@ def test_django_middleware():
         settings.configure(
             DEBUG=True,
             SECRET_KEY="test_secret_key",
-            MIDDLEWARE=["useragent_parser.integrations.django.UserAgentMiddleware"],
+            MIDDLEWARE=["uainsight.integrations.django.UserAgentMiddleware"],
         )
 
     factory = RequestFactory()

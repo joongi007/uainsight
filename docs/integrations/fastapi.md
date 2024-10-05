@@ -1,28 +1,28 @@
 # FastAPI Integration
 
-useragent_parser offers easy integration with FastAPI through a middleware.
+uainsight offers easy integration with FastAPI through a middleware.
 
 ## Installation
 
-First, make sure you have installed useragent_parser in your FastAPI project:
+First, make sure you have installed uainsight in your FastAPI project:
 
 ```bash
-poetry add useragent-parser
+poetry add uainsight
 ```
 
 or if you're using pip:
 
 ```bash
-pip install useragent-parser
+pip install uainsight
 ```
 
 ## Configuration
 
-To use useragent_parser with FastAPI, you need to add the middleware to your FastAPI application:
+To use uainsight with FastAPI, you need to add the middleware to your FastAPI application:
 
 ```python
 from fastapi import FastAPI
-from useragent_parser.integrations.fastapi import FastapiUserAgentMiddleware
+from uainsight.integrations.fastapi import FastapiUserAgentMiddleware
 
 app = FastAPI()
 app.add_middleware(FastapiUserAgentMiddleware)

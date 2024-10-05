@@ -10,7 +10,7 @@ settings.configure(
     ROOT_URLCONF=__name__,
     MIDDLEWARE=[
         "django.middleware.common.CommonMiddleware",
-        "useragent_parser.integrations.django.DjangoUserAgentMiddleware",
+        "uainsight.integrations.django.DjangoUserAgentMiddleware",
     ],
 )
 

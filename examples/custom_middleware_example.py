@@ -1,8 +1,8 @@
 # Usage with WSGI application
 from wsgiref.simple_server import make_server
 
-from useragent_parser import UserAgentParser
-from useragent_parser.core import UserAgent
+from uainsight import UserAgentParser
+from uainsight.core import UserAgent
 
 
 class CustomUserAgentMiddleware:

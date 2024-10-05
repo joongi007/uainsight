@@ -1,6 +1,6 @@
 from re import compile
 
-from useragent_parser import UserAgentParser
+from uainsight import UserAgentParser
 
 
 class CustomUserAgentParser(UserAgentParser):

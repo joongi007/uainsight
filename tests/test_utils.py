@@ -1,4 +1,4 @@
-from useragent_parser.utils import compile_regexes, is_bot
+from uainsight.utils import compile_regexes, is_bot
 
 
 def test_compile_regexes():
